@@ -150,7 +150,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
                                 badge_id: { type: "string",
 									editable: true,
 									nullable: true,
-									validation: {pattern:'.{8,20}'}			
+									validation: {pattern:'.{6,20}'}			
 								 },
                                 email: { type: "string",
 									editable: true,

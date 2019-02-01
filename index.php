@@ -280,7 +280,7 @@ error_log( "Php Errors!" );
 				top: -50px;
 				left: 10px;
 			}
-			#Floorplan div.Locked {
+			#Floorplan div.Locked, tr.Locked {
 				background: #008000;
 				background-image: -webkit-linear-gradient(top, #008000, #004000);
 				background-image: -moz-linear-gradient(top, #008000, #004000);

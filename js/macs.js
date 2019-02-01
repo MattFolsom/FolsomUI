@@ -1,6 +1,6 @@
 function setupMenu () {
 	var menuHTML = "";
-	menuHTML += "<span class=\"menuLeft\"><em id=\"btnDashboard\">Dashboard</em><em id=\"btnUsers\">Users</em><em id=\"btnMachines\">Machines</em><em id=\"btnLog\">Log</em></span>"
+	menuHTML += "<span class=\"menuLeft\"><em id=\"btnDashboard\">Dashboard</em><em id=\"btnUsers\">Users</em><em id=\"btnMachines\">Machines</em><em id=\"btnLog\">Log</em><em id=\"btnAccess\">Access</em></span>"
 	menuHTML += "<span class=\"menuRight\"><input id=\"refRate\" placeholder=\"Refresh rate (seconds) \" style=\"display:none;\"/><em id=\"btnRefRate\" style=\"display:none;\"></em><em id=\"btnLogOut\">Log Out</em></span>"
 	$("#menu").html(menuHTML);
 	
@@ -20,6 +20,10 @@ function setupMenu () {
 				$("#btnLog").kendoButton({
 					icon: "clock",
 					click: function () {location.href = "LogGrid.php";}
+				});
+				$("#btnAccess").kendoButton({
+					icon: "unlock",
+					click: function () {location.href = "AccessGrid.php";}
 				});
 				$("#btnLogOut").kendoButton({
 					icon: "logout",
